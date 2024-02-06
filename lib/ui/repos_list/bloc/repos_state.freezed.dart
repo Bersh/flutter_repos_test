@@ -187,11 +187,11 @@ class _$ReposStateCopyWithImpl<$Res, $Val extends ReposState>
 }
 
 /// @nodoc
-abstract class _$$ReposStateInitialCopyWith<$Res>
+abstract class _$$ReposStateInitialImplCopyWith<$Res>
     implements $ReposStateCopyWith<$Res> {
-  factory _$$ReposStateInitialCopyWith(
-          _$ReposStateInitial value, $Res Function(_$ReposStateInitial) then) =
-      __$$ReposStateInitialCopyWithImpl<$Res>;
+  factory _$$ReposStateInitialImplCopyWith(_$ReposStateInitialImpl value,
+          $Res Function(_$ReposStateInitialImpl) then) =
+      __$$ReposStateInitialImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -203,11 +203,11 @@ abstract class _$$ReposStateInitialCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ReposStateInitialCopyWithImpl<$Res>
-    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateInitial>
-    implements _$$ReposStateInitialCopyWith<$Res> {
-  __$$ReposStateInitialCopyWithImpl(
-      _$ReposStateInitial _value, $Res Function(_$ReposStateInitial) _then)
+class __$$ReposStateInitialImplCopyWithImpl<$Res>
+    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateInitialImpl>
+    implements _$$ReposStateInitialImplCopyWith<$Res> {
+  __$$ReposStateInitialImplCopyWithImpl(_$ReposStateInitialImpl _value,
+      $Res Function(_$ReposStateInitialImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -219,7 +219,7 @@ class __$$ReposStateInitialCopyWithImpl<$Res>
     Object? pageNumber = null,
     Object? totalCount = null,
   }) {
-    return _then(_$ReposStateInitial(
+    return _then(_$ReposStateInitialImpl(
       searchQuery: null == searchQuery
           ? _value.searchQuery
           : searchQuery // ignore: cast_nullable_to_non_nullable
@@ -246,8 +246,8 @@ class __$$ReposStateInitialCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ReposStateInitial implements ReposStateInitial {
-  const _$ReposStateInitial(
+class _$ReposStateInitialImpl implements ReposStateInitial {
+  const _$ReposStateInitialImpl(
       {this.searchQuery = '',
       final List<GitHubRepo> repos = const [],
       final List<GitHubRepo> favoriteRepos = const [],
@@ -290,10 +290,10 @@ class _$ReposStateInitial implements ReposStateInitial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ReposStateInitial &&
+            other is _$ReposStateInitialImpl &&
             (identical(other.searchQuery, searchQuery) ||
                 other.searchQuery == searchQuery) &&
             const DeepCollectionEquality().equals(other._repos, _repos) &&
@@ -317,8 +317,9 @@ class _$ReposStateInitial implements ReposStateInitial {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ReposStateInitialCopyWith<_$ReposStateInitial> get copyWith =>
-      __$$ReposStateInitialCopyWithImpl<_$ReposStateInitial>(this, _$identity);
+  _$$ReposStateInitialImplCopyWith<_$ReposStateInitialImpl> get copyWith =>
+      __$$ReposStateInitialImplCopyWithImpl<_$ReposStateInitialImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -453,7 +454,7 @@ abstract class ReposStateInitial implements ReposState {
       final List<GitHubRepo> repos,
       final List<GitHubRepo> favoriteRepos,
       final int pageNumber,
-      final int totalCount}) = _$ReposStateInitial;
+      final int totalCount}) = _$ReposStateInitialImpl;
 
   @override
   String get searchQuery;
@@ -467,16 +468,16 @@ abstract class ReposStateInitial implements ReposState {
   int get totalCount;
   @override
   @JsonKey(ignore: true)
-  _$$ReposStateInitialCopyWith<_$ReposStateInitial> get copyWith =>
+  _$$ReposStateInitialImplCopyWith<_$ReposStateInitialImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ReposStateSuccessCopyWith<$Res>
+abstract class _$$ReposStateSuccessImplCopyWith<$Res>
     implements $ReposStateCopyWith<$Res> {
-  factory _$$ReposStateSuccessCopyWith(
-          _$ReposStateSuccess value, $Res Function(_$ReposStateSuccess) then) =
-      __$$ReposStateSuccessCopyWithImpl<$Res>;
+  factory _$$ReposStateSuccessImplCopyWith(_$ReposStateSuccessImpl value,
+          $Res Function(_$ReposStateSuccessImpl) then) =
+      __$$ReposStateSuccessImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -488,11 +489,11 @@ abstract class _$$ReposStateSuccessCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ReposStateSuccessCopyWithImpl<$Res>
-    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateSuccess>
-    implements _$$ReposStateSuccessCopyWith<$Res> {
-  __$$ReposStateSuccessCopyWithImpl(
-      _$ReposStateSuccess _value, $Res Function(_$ReposStateSuccess) _then)
+class __$$ReposStateSuccessImplCopyWithImpl<$Res>
+    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateSuccessImpl>
+    implements _$$ReposStateSuccessImplCopyWith<$Res> {
+  __$$ReposStateSuccessImplCopyWithImpl(_$ReposStateSuccessImpl _value,
+      $Res Function(_$ReposStateSuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -504,7 +505,7 @@ class __$$ReposStateSuccessCopyWithImpl<$Res>
     Object? pageNumber = null,
     Object? totalCount = null,
   }) {
-    return _then(_$ReposStateSuccess(
+    return _then(_$ReposStateSuccessImpl(
       searchQuery: null == searchQuery
           ? _value.searchQuery
           : searchQuery // ignore: cast_nullable_to_non_nullable
@@ -531,8 +532,8 @@ class __$$ReposStateSuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ReposStateSuccess implements ReposStateSuccess {
-  const _$ReposStateSuccess(
+class _$ReposStateSuccessImpl implements ReposStateSuccess {
+  const _$ReposStateSuccessImpl(
       {required this.searchQuery,
       required final List<GitHubRepo> repos,
       required final List<GitHubRepo> favoriteRepos,
@@ -570,10 +571,10 @@ class _$ReposStateSuccess implements ReposStateSuccess {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ReposStateSuccess &&
+            other is _$ReposStateSuccessImpl &&
             (identical(other.searchQuery, searchQuery) ||
                 other.searchQuery == searchQuery) &&
             const DeepCollectionEquality().equals(other._repos, _repos) &&
@@ -597,8 +598,9 @@ class _$ReposStateSuccess implements ReposStateSuccess {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ReposStateSuccessCopyWith<_$ReposStateSuccess> get copyWith =>
-      __$$ReposStateSuccessCopyWithImpl<_$ReposStateSuccess>(this, _$identity);
+  _$$ReposStateSuccessImplCopyWith<_$ReposStateSuccessImpl> get copyWith =>
+      __$$ReposStateSuccessImplCopyWithImpl<_$ReposStateSuccessImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -733,7 +735,7 @@ abstract class ReposStateSuccess implements ReposState {
       required final List<GitHubRepo> repos,
       required final List<GitHubRepo> favoriteRepos,
       required final int pageNumber,
-      required final int totalCount}) = _$ReposStateSuccess;
+      required final int totalCount}) = _$ReposStateSuccessImpl;
 
   @override
   String get searchQuery;
@@ -747,16 +749,16 @@ abstract class ReposStateSuccess implements ReposState {
   int get totalCount;
   @override
   @JsonKey(ignore: true)
-  _$$ReposStateSuccessCopyWith<_$ReposStateSuccess> get copyWith =>
+  _$$ReposStateSuccessImplCopyWith<_$ReposStateSuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ReposStateLoadingCopyWith<$Res>
+abstract class _$$ReposStateLoadingImplCopyWith<$Res>
     implements $ReposStateCopyWith<$Res> {
-  factory _$$ReposStateLoadingCopyWith(
-          _$ReposStateLoading value, $Res Function(_$ReposStateLoading) then) =
-      __$$ReposStateLoadingCopyWithImpl<$Res>;
+  factory _$$ReposStateLoadingImplCopyWith(_$ReposStateLoadingImpl value,
+          $Res Function(_$ReposStateLoadingImpl) then) =
+      __$$ReposStateLoadingImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -768,11 +770,11 @@ abstract class _$$ReposStateLoadingCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ReposStateLoadingCopyWithImpl<$Res>
-    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateLoading>
-    implements _$$ReposStateLoadingCopyWith<$Res> {
-  __$$ReposStateLoadingCopyWithImpl(
-      _$ReposStateLoading _value, $Res Function(_$ReposStateLoading) _then)
+class __$$ReposStateLoadingImplCopyWithImpl<$Res>
+    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateLoadingImpl>
+    implements _$$ReposStateLoadingImplCopyWith<$Res> {
+  __$$ReposStateLoadingImplCopyWithImpl(_$ReposStateLoadingImpl _value,
+      $Res Function(_$ReposStateLoadingImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -784,7 +786,7 @@ class __$$ReposStateLoadingCopyWithImpl<$Res>
     Object? pageNumber = null,
     Object? totalCount = null,
   }) {
-    return _then(_$ReposStateLoading(
+    return _then(_$ReposStateLoadingImpl(
       searchQuery: null == searchQuery
           ? _value.searchQuery
           : searchQuery // ignore: cast_nullable_to_non_nullable
@@ -811,8 +813,8 @@ class __$$ReposStateLoadingCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ReposStateLoading implements ReposStateLoading {
-  const _$ReposStateLoading(
+class _$ReposStateLoadingImpl implements ReposStateLoading {
+  const _$ReposStateLoadingImpl(
       {this.searchQuery = '',
       final List<GitHubRepo> repos = const [],
       final List<GitHubRepo> favoriteRepos = const [],
@@ -855,10 +857,10 @@ class _$ReposStateLoading implements ReposStateLoading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ReposStateLoading &&
+            other is _$ReposStateLoadingImpl &&
             (identical(other.searchQuery, searchQuery) ||
                 other.searchQuery == searchQuery) &&
             const DeepCollectionEquality().equals(other._repos, _repos) &&
@@ -882,8 +884,9 @@ class _$ReposStateLoading implements ReposStateLoading {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ReposStateLoadingCopyWith<_$ReposStateLoading> get copyWith =>
-      __$$ReposStateLoadingCopyWithImpl<_$ReposStateLoading>(this, _$identity);
+  _$$ReposStateLoadingImplCopyWith<_$ReposStateLoadingImpl> get copyWith =>
+      __$$ReposStateLoadingImplCopyWithImpl<_$ReposStateLoadingImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1018,7 +1021,7 @@ abstract class ReposStateLoading implements ReposState {
       final List<GitHubRepo> repos,
       final List<GitHubRepo> favoriteRepos,
       final int pageNumber,
-      final int totalCount}) = _$ReposStateLoading;
+      final int totalCount}) = _$ReposStateLoadingImpl;
 
   @override
   String get searchQuery;
@@ -1032,16 +1035,16 @@ abstract class ReposStateLoading implements ReposState {
   int get totalCount;
   @override
   @JsonKey(ignore: true)
-  _$$ReposStateLoadingCopyWith<_$ReposStateLoading> get copyWith =>
+  _$$ReposStateLoadingImplCopyWith<_$ReposStateLoadingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ReposStateErrorCopyWith<$Res>
+abstract class _$$ReposStateErrorImplCopyWith<$Res>
     implements $ReposStateCopyWith<$Res> {
-  factory _$$ReposStateErrorCopyWith(
-          _$ReposStateError value, $Res Function(_$ReposStateError) then) =
-      __$$ReposStateErrorCopyWithImpl<$Res>;
+  factory _$$ReposStateErrorImplCopyWith(_$ReposStateErrorImpl value,
+          $Res Function(_$ReposStateErrorImpl) then) =
+      __$$ReposStateErrorImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1054,11 +1057,11 @@ abstract class _$$ReposStateErrorCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ReposStateErrorCopyWithImpl<$Res>
-    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateError>
-    implements _$$ReposStateErrorCopyWith<$Res> {
-  __$$ReposStateErrorCopyWithImpl(
-      _$ReposStateError _value, $Res Function(_$ReposStateError) _then)
+class __$$ReposStateErrorImplCopyWithImpl<$Res>
+    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateErrorImpl>
+    implements _$$ReposStateErrorImplCopyWith<$Res> {
+  __$$ReposStateErrorImplCopyWithImpl(
+      _$ReposStateErrorImpl _value, $Res Function(_$ReposStateErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1071,7 +1074,7 @@ class __$$ReposStateErrorCopyWithImpl<$Res>
     Object? pageNumber = null,
     Object? totalCount = null,
   }) {
-    return _then(_$ReposStateError(
+    return _then(_$ReposStateErrorImpl(
       errorMessage: null == errorMessage
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
@@ -1102,8 +1105,8 @@ class __$$ReposStateErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ReposStateError implements ReposStateError {
-  const _$ReposStateError(
+class _$ReposStateErrorImpl implements ReposStateError {
+  const _$ReposStateErrorImpl(
       {required this.errorMessage,
       this.searchQuery = '',
       final List<GitHubRepo> repos = const [],
@@ -1149,10 +1152,10 @@ class _$ReposStateError implements ReposStateError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ReposStateError &&
+            other is _$ReposStateErrorImpl &&
             (identical(other.errorMessage, errorMessage) ||
                 other.errorMessage == errorMessage) &&
             (identical(other.searchQuery, searchQuery) ||
@@ -1179,8 +1182,9 @@ class _$ReposStateError implements ReposStateError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ReposStateErrorCopyWith<_$ReposStateError> get copyWith =>
-      __$$ReposStateErrorCopyWithImpl<_$ReposStateError>(this, _$identity);
+  _$$ReposStateErrorImplCopyWith<_$ReposStateErrorImpl> get copyWith =>
+      __$$ReposStateErrorImplCopyWithImpl<_$ReposStateErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1318,7 +1322,7 @@ abstract class ReposStateError implements ReposState {
       final List<GitHubRepo> repos,
       final List<GitHubRepo> favoriteRepos,
       final int pageNumber,
-      final int totalCount}) = _$ReposStateError;
+      final int totalCount}) = _$ReposStateErrorImpl;
 
   String get errorMessage;
   @override
@@ -1333,16 +1337,17 @@ abstract class ReposStateError implements ReposState {
   int get totalCount;
   @override
   @JsonKey(ignore: true)
-  _$$ReposStateErrorCopyWith<_$ReposStateError> get copyWith =>
+  _$$ReposStateErrorImplCopyWith<_$ReposStateErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ReposStateGoToFavoritesCopyWith<$Res>
+abstract class _$$ReposStateGoToFavoritesImplCopyWith<$Res>
     implements $ReposStateCopyWith<$Res> {
-  factory _$$ReposStateGoToFavoritesCopyWith(_$ReposStateGoToFavorites value,
-          $Res Function(_$ReposStateGoToFavorites) then) =
-      __$$ReposStateGoToFavoritesCopyWithImpl<$Res>;
+  factory _$$ReposStateGoToFavoritesImplCopyWith(
+          _$ReposStateGoToFavoritesImpl value,
+          $Res Function(_$ReposStateGoToFavoritesImpl) then) =
+      __$$ReposStateGoToFavoritesImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1354,11 +1359,12 @@ abstract class _$$ReposStateGoToFavoritesCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ReposStateGoToFavoritesCopyWithImpl<$Res>
-    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateGoToFavorites>
-    implements _$$ReposStateGoToFavoritesCopyWith<$Res> {
-  __$$ReposStateGoToFavoritesCopyWithImpl(_$ReposStateGoToFavorites _value,
-      $Res Function(_$ReposStateGoToFavorites) _then)
+class __$$ReposStateGoToFavoritesImplCopyWithImpl<$Res>
+    extends _$ReposStateCopyWithImpl<$Res, _$ReposStateGoToFavoritesImpl>
+    implements _$$ReposStateGoToFavoritesImplCopyWith<$Res> {
+  __$$ReposStateGoToFavoritesImplCopyWithImpl(
+      _$ReposStateGoToFavoritesImpl _value,
+      $Res Function(_$ReposStateGoToFavoritesImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1370,7 +1376,7 @@ class __$$ReposStateGoToFavoritesCopyWithImpl<$Res>
     Object? pageNumber = null,
     Object? totalCount = null,
   }) {
-    return _then(_$ReposStateGoToFavorites(
+    return _then(_$ReposStateGoToFavoritesImpl(
       searchQuery: null == searchQuery
           ? _value.searchQuery
           : searchQuery // ignore: cast_nullable_to_non_nullable
@@ -1397,8 +1403,8 @@ class __$$ReposStateGoToFavoritesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ReposStateGoToFavorites implements ReposStateGoToFavorites {
-  const _$ReposStateGoToFavorites(
+class _$ReposStateGoToFavoritesImpl implements ReposStateGoToFavorites {
+  const _$ReposStateGoToFavoritesImpl(
       {this.searchQuery = '',
       final List<GitHubRepo> repos = const [],
       final List<GitHubRepo> favoriteRepos = const [],
@@ -1441,10 +1447,10 @@ class _$ReposStateGoToFavorites implements ReposStateGoToFavorites {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ReposStateGoToFavorites &&
+            other is _$ReposStateGoToFavoritesImpl &&
             (identical(other.searchQuery, searchQuery) ||
                 other.searchQuery == searchQuery) &&
             const DeepCollectionEquality().equals(other._repos, _repos) &&
@@ -1468,9 +1474,9 @@ class _$ReposStateGoToFavorites implements ReposStateGoToFavorites {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ReposStateGoToFavoritesCopyWith<_$ReposStateGoToFavorites> get copyWith =>
-      __$$ReposStateGoToFavoritesCopyWithImpl<_$ReposStateGoToFavorites>(
-          this, _$identity);
+  _$$ReposStateGoToFavoritesImplCopyWith<_$ReposStateGoToFavoritesImpl>
+      get copyWith => __$$ReposStateGoToFavoritesImplCopyWithImpl<
+          _$ReposStateGoToFavoritesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1607,7 +1613,7 @@ abstract class ReposStateGoToFavorites implements ReposState {
       final List<GitHubRepo> repos,
       final List<GitHubRepo> favoriteRepos,
       final int pageNumber,
-      final int totalCount}) = _$ReposStateGoToFavorites;
+      final int totalCount}) = _$ReposStateGoToFavoritesImpl;
 
   @override
   String get searchQuery;
@@ -1621,6 +1627,6 @@ abstract class ReposStateGoToFavorites implements ReposState {
   int get totalCount;
   @override
   @JsonKey(ignore: true)
-  _$$ReposStateGoToFavoritesCopyWith<_$ReposStateGoToFavorites> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ReposStateGoToFavoritesImplCopyWith<_$ReposStateGoToFavoritesImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

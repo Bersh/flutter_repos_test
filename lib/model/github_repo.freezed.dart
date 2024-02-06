@@ -49,17 +49,12 @@ abstract class $GitHubRepoCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          int id,
-      @HiveField(1)
-          String name,
-      @HiveField(2)
-          bool private,
-      @HiveField(3)
-          Owner? owner,
-      @HiveField(4)
-          String htmlUrl,
-      @HiveField(5)
-          String? description});
+      int id,
+      @HiveField(1) String name,
+      @HiveField(2) bool private,
+      @HiveField(3) Owner? owner,
+      @HiveField(4) String htmlUrl,
+      @HiveField(5) String? description});
 
   $OwnerCopyWith<$Res>? get owner;
 }
@@ -126,38 +121,33 @@ class _$GitHubRepoCopyWithImpl<$Res, $Val extends GitHubRepo>
 }
 
 /// @nodoc
-abstract class _$$_GitHubRepoCopyWith<$Res>
+abstract class _$$GitHubRepoImplCopyWith<$Res>
     implements $GitHubRepoCopyWith<$Res> {
-  factory _$$_GitHubRepoCopyWith(
-          _$_GitHubRepo value, $Res Function(_$_GitHubRepo) then) =
-      __$$_GitHubRepoCopyWithImpl<$Res>;
+  factory _$$GitHubRepoImplCopyWith(
+          _$GitHubRepoImpl value, $Res Function(_$GitHubRepoImpl) then) =
+      __$$GitHubRepoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          int id,
-      @HiveField(1)
-          String name,
-      @HiveField(2)
-          bool private,
-      @HiveField(3)
-          Owner? owner,
-      @HiveField(4)
-          String htmlUrl,
-      @HiveField(5)
-          String? description});
+      int id,
+      @HiveField(1) String name,
+      @HiveField(2) bool private,
+      @HiveField(3) Owner? owner,
+      @HiveField(4) String htmlUrl,
+      @HiveField(5) String? description});
 
   @override
   $OwnerCopyWith<$Res>? get owner;
 }
 
 /// @nodoc
-class __$$_GitHubRepoCopyWithImpl<$Res>
-    extends _$GitHubRepoCopyWithImpl<$Res, _$_GitHubRepo>
-    implements _$$_GitHubRepoCopyWith<$Res> {
-  __$$_GitHubRepoCopyWithImpl(
-      _$_GitHubRepo _value, $Res Function(_$_GitHubRepo) _then)
+class __$$GitHubRepoImplCopyWithImpl<$Res>
+    extends _$GitHubRepoCopyWithImpl<$Res, _$GitHubRepoImpl>
+    implements _$$GitHubRepoImplCopyWith<$Res> {
+  __$$GitHubRepoImplCopyWithImpl(
+      _$GitHubRepoImpl _value, $Res Function(_$GitHubRepoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -170,7 +160,7 @@ class __$$_GitHubRepoCopyWithImpl<$Res>
     Object? htmlUrl = null,
     Object? description = freezed,
   }) {
-    return _then(_$_GitHubRepo(
+    return _then(_$GitHubRepoImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -202,24 +192,19 @@ class __$$_GitHubRepoCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 @HiveType(typeId: 0)
-class _$_GitHubRepo implements _GitHubRepo {
-  const _$_GitHubRepo(
+class _$GitHubRepoImpl implements _GitHubRepo {
+  const _$GitHubRepoImpl(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          required this.id,
-      @HiveField(1)
-          this.name = '',
-      @HiveField(2)
-          this.private = false,
-      @HiveField(3)
-          this.owner,
-      @HiveField(4)
-          this.htmlUrl = '',
-      @HiveField(5)
-          this.description});
+      required this.id,
+      @HiveField(1) this.name = '',
+      @HiveField(2) this.private = false,
+      @HiveField(3) this.owner,
+      @HiveField(4) this.htmlUrl = '',
+      @HiveField(5) this.description});
 
-  factory _$_GitHubRepo.fromJson(Map<String, dynamic> json) =>
-      _$$_GitHubRepoFromJson(json);
+  factory _$GitHubRepoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$GitHubRepoImplFromJson(json);
 
   @override
   @JsonKey(name: 'id', required: true, disallowNullValue: true)
@@ -250,10 +235,10 @@ class _$_GitHubRepo implements _GitHubRepo {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GitHubRepo &&
+            other is _$GitHubRepoImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.private, private) || other.private == private) &&
@@ -271,12 +256,12 @@ class _$_GitHubRepo implements _GitHubRepo {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GitHubRepoCopyWith<_$_GitHubRepo> get copyWith =>
-      __$$_GitHubRepoCopyWithImpl<_$_GitHubRepo>(this, _$identity);
+  _$$GitHubRepoImplCopyWith<_$GitHubRepoImpl> get copyWith =>
+      __$$GitHubRepoImplCopyWithImpl<_$GitHubRepoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GitHubRepoToJson(
+    return _$$GitHubRepoImplToJson(
       this,
     );
   }
@@ -286,20 +271,15 @@ abstract class _GitHubRepo implements GitHubRepo {
   const factory _GitHubRepo(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          required final int id,
-      @HiveField(1)
-          final String name,
-      @HiveField(2)
-          final bool private,
-      @HiveField(3)
-          final Owner? owner,
-      @HiveField(4)
-          final String htmlUrl,
-      @HiveField(5)
-          final String? description}) = _$_GitHubRepo;
+      required final int id,
+      @HiveField(1) final String name,
+      @HiveField(2) final bool private,
+      @HiveField(3) final Owner? owner,
+      @HiveField(4) final String htmlUrl,
+      @HiveField(5) final String? description}) = _$GitHubRepoImpl;
 
   factory _GitHubRepo.fromJson(Map<String, dynamic> json) =
-      _$_GitHubRepo.fromJson;
+      _$GitHubRepoImpl.fromJson;
 
   @override
   @JsonKey(name: 'id', required: true, disallowNullValue: true)
@@ -322,6 +302,6 @@ abstract class _GitHubRepo implements GitHubRepo {
   String? get description;
   @override
   @JsonKey(ignore: true)
-  _$$_GitHubRepoCopyWith<_$_GitHubRepo> get copyWith =>
+  _$$GitHubRepoImplCopyWith<_$GitHubRepoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

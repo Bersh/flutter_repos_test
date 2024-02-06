@@ -6,17 +6,17 @@ part of 'github_repo.dart';
 // TypeAdapterGenerator
 // **************************************************************************
 
-class GitHubRepoAdapter extends TypeAdapter<_$_GitHubRepo> {
+class GitHubRepoImplAdapter extends TypeAdapter<_$GitHubRepoImpl> {
   @override
   final int typeId = 0;
 
   @override
-  _$_GitHubRepo read(BinaryReader reader) {
+  _$GitHubRepoImpl read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return _$_GitHubRepo(
+    return _$GitHubRepoImpl(
       id: fields[0] as int,
       name: fields[1] as String,
       private: fields[2] as bool,
@@ -27,7 +27,7 @@ class GitHubRepoAdapter extends TypeAdapter<_$_GitHubRepo> {
   }
 
   @override
-  void write(BinaryWriter writer, _$_GitHubRepo obj) {
+  void write(BinaryWriter writer, _$GitHubRepoImpl obj) {
     writer
       ..writeByte(6)
       ..writeByte(0)
@@ -50,7 +50,7 @@ class GitHubRepoAdapter extends TypeAdapter<_$_GitHubRepo> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is GitHubRepoAdapter &&
+      other is GitHubRepoImplAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
@@ -59,13 +59,13 @@ class GitHubRepoAdapter extends TypeAdapter<_$_GitHubRepo> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_GitHubRepo _$$_GitHubRepoFromJson(Map<String, dynamic> json) {
+_$GitHubRepoImpl _$$GitHubRepoImplFromJson(Map<String, dynamic> json) {
   $checkKeys(
     json,
     requiredKeys: const ['id'],
     disallowNullValues: const ['id'],
   );
-  return _$_GitHubRepo(
+  return _$GitHubRepoImpl(
     id: json['id'] as int,
     name: json['name'] as String? ?? '',
     private: json['private'] as bool? ?? false,
@@ -77,7 +77,7 @@ _$_GitHubRepo _$$_GitHubRepoFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$$_GitHubRepoToJson(_$_GitHubRepo instance) =>
+Map<String, dynamic> _$$GitHubRepoImplToJson(_$GitHubRepoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

@@ -75,25 +75,26 @@ class _$FavoritesStateCopyWithImpl<$Res, $Val extends FavoritesState>
 }
 
 /// @nodoc
-abstract class _$$LoadingFavoritesStateCopyWith<$Res> {
-  factory _$$LoadingFavoritesStateCopyWith(_$LoadingFavoritesState value,
-          $Res Function(_$LoadingFavoritesState) then) =
-      __$$LoadingFavoritesStateCopyWithImpl<$Res>;
+abstract class _$$LoadingFavoritesStateImplCopyWith<$Res> {
+  factory _$$LoadingFavoritesStateImplCopyWith(
+          _$LoadingFavoritesStateImpl value,
+          $Res Function(_$LoadingFavoritesStateImpl) then) =
+      __$$LoadingFavoritesStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoadingFavoritesStateCopyWithImpl<$Res>
-    extends _$FavoritesStateCopyWithImpl<$Res, _$LoadingFavoritesState>
-    implements _$$LoadingFavoritesStateCopyWith<$Res> {
-  __$$LoadingFavoritesStateCopyWithImpl(_$LoadingFavoritesState _value,
-      $Res Function(_$LoadingFavoritesState) _then)
+class __$$LoadingFavoritesStateImplCopyWithImpl<$Res>
+    extends _$FavoritesStateCopyWithImpl<$Res, _$LoadingFavoritesStateImpl>
+    implements _$$LoadingFavoritesStateImplCopyWith<$Res> {
+  __$$LoadingFavoritesStateImplCopyWithImpl(_$LoadingFavoritesStateImpl _value,
+      $Res Function(_$LoadingFavoritesStateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$LoadingFavoritesState implements LoadingFavoritesState {
-  const _$LoadingFavoritesState();
+class _$LoadingFavoritesStateImpl implements LoadingFavoritesState {
+  const _$LoadingFavoritesStateImpl();
 
   @override
   String toString() {
@@ -101,9 +102,10 @@ class _$LoadingFavoritesState implements LoadingFavoritesState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingFavoritesState);
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingFavoritesStateImpl);
   }
 
   @override
@@ -173,24 +175,24 @@ class _$LoadingFavoritesState implements LoadingFavoritesState {
 }
 
 abstract class LoadingFavoritesState implements FavoritesState {
-  const factory LoadingFavoritesState() = _$LoadingFavoritesState;
+  const factory LoadingFavoritesState() = _$LoadingFavoritesStateImpl;
 }
 
 /// @nodoc
-abstract class _$$LoadedFavoritesStateCopyWith<$Res> {
-  factory _$$LoadedFavoritesStateCopyWith(_$LoadedFavoritesState value,
-          $Res Function(_$LoadedFavoritesState) then) =
-      __$$LoadedFavoritesStateCopyWithImpl<$Res>;
+abstract class _$$LoadedFavoritesStateImplCopyWith<$Res> {
+  factory _$$LoadedFavoritesStateImplCopyWith(_$LoadedFavoritesStateImpl value,
+          $Res Function(_$LoadedFavoritesStateImpl) then) =
+      __$$LoadedFavoritesStateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<GitHubRepo> repos});
 }
 
 /// @nodoc
-class __$$LoadedFavoritesStateCopyWithImpl<$Res>
-    extends _$FavoritesStateCopyWithImpl<$Res, _$LoadedFavoritesState>
-    implements _$$LoadedFavoritesStateCopyWith<$Res> {
-  __$$LoadedFavoritesStateCopyWithImpl(_$LoadedFavoritesState _value,
-      $Res Function(_$LoadedFavoritesState) _then)
+class __$$LoadedFavoritesStateImplCopyWithImpl<$Res>
+    extends _$FavoritesStateCopyWithImpl<$Res, _$LoadedFavoritesStateImpl>
+    implements _$$LoadedFavoritesStateImplCopyWith<$Res> {
+  __$$LoadedFavoritesStateImplCopyWithImpl(_$LoadedFavoritesStateImpl _value,
+      $Res Function(_$LoadedFavoritesStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -198,7 +200,7 @@ class __$$LoadedFavoritesStateCopyWithImpl<$Res>
   $Res call({
     Object? repos = null,
   }) {
-    return _then(_$LoadedFavoritesState(
+    return _then(_$LoadedFavoritesStateImpl(
       repos: null == repos
           ? _value._repos
           : repos // ignore: cast_nullable_to_non_nullable
@@ -209,8 +211,8 @@ class __$$LoadedFavoritesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoadedFavoritesState implements LoadedFavoritesState {
-  const _$LoadedFavoritesState({required final List<GitHubRepo> repos})
+class _$LoadedFavoritesStateImpl implements LoadedFavoritesState {
+  const _$LoadedFavoritesStateImpl({required final List<GitHubRepo> repos})
       : _repos = repos;
 
   final List<GitHubRepo> _repos;
@@ -227,10 +229,10 @@ class _$LoadedFavoritesState implements LoadedFavoritesState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LoadedFavoritesState &&
+            other is _$LoadedFavoritesStateImpl &&
             const DeepCollectionEquality().equals(other._repos, _repos));
   }
 
@@ -241,9 +243,10 @@ class _$LoadedFavoritesState implements LoadedFavoritesState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoadedFavoritesStateCopyWith<_$LoadedFavoritesState> get copyWith =>
-      __$$LoadedFavoritesStateCopyWithImpl<_$LoadedFavoritesState>(
-          this, _$identity);
+  _$$LoadedFavoritesStateImplCopyWith<_$LoadedFavoritesStateImpl>
+      get copyWith =>
+          __$$LoadedFavoritesStateImplCopyWithImpl<_$LoadedFavoritesStateImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -310,10 +313,10 @@ class _$LoadedFavoritesState implements LoadedFavoritesState {
 
 abstract class LoadedFavoritesState implements FavoritesState {
   const factory LoadedFavoritesState({required final List<GitHubRepo> repos}) =
-      _$LoadedFavoritesState;
+      _$LoadedFavoritesStateImpl;
 
   List<GitHubRepo> get repos;
   @JsonKey(ignore: true)
-  _$$LoadedFavoritesStateCopyWith<_$LoadedFavoritesState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$LoadedFavoritesStateImplCopyWith<_$LoadedFavoritesStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

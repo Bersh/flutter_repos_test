@@ -17,8 +17,8 @@ void main() async {
 
 Future<void> initDb() async {
   await Hive.initFlutter();
-  Hive.registerAdapter(OwnerAdapter());
-  Hive.registerAdapter(GitHubRepoAdapter());
+  Hive.registerAdapter(OwnerImplAdapter());
+  Hive.registerAdapter(GitHubRepoImplAdapter());
 }
 
 void initDi() {

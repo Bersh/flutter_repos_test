@@ -47,17 +47,12 @@ abstract class $OwnerCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          int id,
-      @HiveField(1)
-          String login,
-      @HiveField(2)
-          String? avatarUrl,
-      @HiveField(3)
-          String? gravatarId,
-      @HiveField(4)
-          String url,
-      @HiveField(5)
-          String? description});
+      int id,
+      @HiveField(1) String login,
+      @HiveField(2) String? avatarUrl,
+      @HiveField(3) String? gravatarId,
+      @HiveField(4) String url,
+      @HiveField(5) String? description});
 }
 
 /// @nodoc
@@ -110,31 +105,29 @@ class _$OwnerCopyWithImpl<$Res, $Val extends Owner>
 }
 
 /// @nodoc
-abstract class _$$_OwnerCopyWith<$Res> implements $OwnerCopyWith<$Res> {
-  factory _$$_OwnerCopyWith(_$_Owner value, $Res Function(_$_Owner) then) =
-      __$$_OwnerCopyWithImpl<$Res>;
+abstract class _$$OwnerImplCopyWith<$Res> implements $OwnerCopyWith<$Res> {
+  factory _$$OwnerImplCopyWith(
+          _$OwnerImpl value, $Res Function(_$OwnerImpl) then) =
+      __$$OwnerImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          int id,
-      @HiveField(1)
-          String login,
-      @HiveField(2)
-          String? avatarUrl,
-      @HiveField(3)
-          String? gravatarId,
-      @HiveField(4)
-          String url,
-      @HiveField(5)
-          String? description});
+      int id,
+      @HiveField(1) String login,
+      @HiveField(2) String? avatarUrl,
+      @HiveField(3) String? gravatarId,
+      @HiveField(4) String url,
+      @HiveField(5) String? description});
 }
 
 /// @nodoc
-class __$$_OwnerCopyWithImpl<$Res> extends _$OwnerCopyWithImpl<$Res, _$_Owner>
-    implements _$$_OwnerCopyWith<$Res> {
-  __$$_OwnerCopyWithImpl(_$_Owner _value, $Res Function(_$_Owner) _then)
+class __$$OwnerImplCopyWithImpl<$Res>
+    extends _$OwnerCopyWithImpl<$Res, _$OwnerImpl>
+    implements _$$OwnerImplCopyWith<$Res> {
+  __$$OwnerImplCopyWithImpl(
+      _$OwnerImpl _value, $Res Function(_$OwnerImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -147,7 +140,7 @@ class __$$_OwnerCopyWithImpl<$Res> extends _$OwnerCopyWithImpl<$Res, _$_Owner>
     Object? url = null,
     Object? description = freezed,
   }) {
-    return _then(_$_Owner(
+    return _then(_$OwnerImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -179,24 +172,19 @@ class __$$_OwnerCopyWithImpl<$Res> extends _$OwnerCopyWithImpl<$Res, _$_Owner>
 /// @nodoc
 @JsonSerializable()
 @HiveType(typeId: 1)
-class _$_Owner implements _Owner {
-  const _$_Owner(
+class _$OwnerImpl implements _Owner {
+  const _$OwnerImpl(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          required this.id,
-      @HiveField(1)
-          this.login = '',
-      @HiveField(2)
-          this.avatarUrl,
-      @HiveField(3)
-          this.gravatarId,
-      @HiveField(4)
-          this.url = '',
-      @HiveField(5)
-          this.description});
+      required this.id,
+      @HiveField(1) this.login = '',
+      @HiveField(2) this.avatarUrl,
+      @HiveField(3) this.gravatarId,
+      @HiveField(4) this.url = '',
+      @HiveField(5) this.description});
 
-  factory _$_Owner.fromJson(Map<String, dynamic> json) =>
-      _$$_OwnerFromJson(json);
+  factory _$OwnerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OwnerImplFromJson(json);
 
   @override
   @JsonKey(name: 'id', required: true, disallowNullValue: true)
@@ -226,10 +214,10 @@ class _$_Owner implements _Owner {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Owner &&
+            other is _$OwnerImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.login, login) || other.login == login) &&
             (identical(other.avatarUrl, avatarUrl) ||
@@ -249,12 +237,12 @@ class _$_Owner implements _Owner {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_OwnerCopyWith<_$_Owner> get copyWith =>
-      __$$_OwnerCopyWithImpl<_$_Owner>(this, _$identity);
+  _$$OwnerImplCopyWith<_$OwnerImpl> get copyWith =>
+      __$$OwnerImplCopyWithImpl<_$OwnerImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_OwnerToJson(
+    return _$$OwnerImplToJson(
       this,
     );
   }
@@ -264,19 +252,14 @@ abstract class _Owner implements Owner {
   const factory _Owner(
       {@JsonKey(name: 'id', required: true, disallowNullValue: true)
       @HiveField(0)
-          required final int id,
-      @HiveField(1)
-          final String login,
-      @HiveField(2)
-          final String? avatarUrl,
-      @HiveField(3)
-          final String? gravatarId,
-      @HiveField(4)
-          final String url,
-      @HiveField(5)
-          final String? description}) = _$_Owner;
+      required final int id,
+      @HiveField(1) final String login,
+      @HiveField(2) final String? avatarUrl,
+      @HiveField(3) final String? gravatarId,
+      @HiveField(4) final String url,
+      @HiveField(5) final String? description}) = _$OwnerImpl;
 
-  factory _Owner.fromJson(Map<String, dynamic> json) = _$_Owner.fromJson;
+  factory _Owner.fromJson(Map<String, dynamic> json) = _$OwnerImpl.fromJson;
 
   @override
   @JsonKey(name: 'id', required: true, disallowNullValue: true)
@@ -299,6 +282,6 @@ abstract class _Owner implements Owner {
   String? get description;
   @override
   @JsonKey(ignore: true)
-  _$$_OwnerCopyWith<_$_Owner> get copyWith =>
+  _$$OwnerImplCopyWith<_$OwnerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

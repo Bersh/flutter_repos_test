@@ -6,17 +6,17 @@ part of 'github_repo_owner.dart';
 // TypeAdapterGenerator
 // **************************************************************************
 
-class OwnerAdapter extends TypeAdapter<_$_Owner> {
+class OwnerImplAdapter extends TypeAdapter<_$OwnerImpl> {
   @override
   final int typeId = 1;
 
   @override
-  _$_Owner read(BinaryReader reader) {
+  _$OwnerImpl read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return _$_Owner(
+    return _$OwnerImpl(
       id: fields[0] as int,
       login: fields[1] as String,
       avatarUrl: fields[2] as String?,
@@ -27,7 +27,7 @@ class OwnerAdapter extends TypeAdapter<_$_Owner> {
   }
 
   @override
-  void write(BinaryWriter writer, _$_Owner obj) {
+  void write(BinaryWriter writer, _$OwnerImpl obj) {
     writer
       ..writeByte(6)
       ..writeByte(0)
@@ -50,7 +50,7 @@ class OwnerAdapter extends TypeAdapter<_$_Owner> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is OwnerAdapter &&
+      other is OwnerImplAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
@@ -59,13 +59,13 @@ class OwnerAdapter extends TypeAdapter<_$_Owner> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Owner _$$_OwnerFromJson(Map<String, dynamic> json) {
+_$OwnerImpl _$$OwnerImplFromJson(Map<String, dynamic> json) {
   $checkKeys(
     json,
     requiredKeys: const ['id'],
     disallowNullValues: const ['id'],
   );
-  return _$_Owner(
+  return _$OwnerImpl(
     id: json['id'] as int,
     login: json['login'] as String? ?? '',
     avatarUrl: json['avatarUrl'] as String?,
@@ -75,7 +75,8 @@ _$_Owner _$$_OwnerFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$$_OwnerToJson(_$_Owner instance) => <String, dynamic>{
+Map<String, dynamic> _$$OwnerImplToJson(_$OwnerImpl instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'login': instance.login,
       'avatarUrl': instance.avatarUrl,
