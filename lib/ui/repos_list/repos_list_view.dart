@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:github_repos_multithread/constants/palette.dart';
-import 'package:github_repos_multithread/constants/strings.dart';
-import 'package:github_repos_multithread/constants/styles.dart';
+import 'package:github_repos_multithread/ui/constants/palette.dart';
+import 'package:github_repos_multithread/ui/constants/strings.dart';
+import 'package:github_repos_multithread/ui/constants/styles.dart';
 import 'package:github_repos_multithread/ui/favorites/favorites_list_screen.dart';
 import 'package:github_repos_multithread/ui/repos_list/widgets/list_view_with_search.dart';
 import 'package:github_repos_multithread/ui/repos_list/widgets/search_form.dart';

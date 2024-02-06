@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:github_repos_multithread/constants/palette.dart';
-import 'package:github_repos_multithread/constants/styles.dart';
+import 'package:github_repos_multithread/ui/constants/palette.dart';
+import 'package:github_repos_multithread/ui/constants/styles.dart';
+
 
 ThemeData buildTheme() {
   return ThemeData(

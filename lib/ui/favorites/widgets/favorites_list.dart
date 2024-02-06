@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:github_repos_multithread/constants/palette.dart';
-import 'package:github_repos_multithread/constants/styles.dart';
 import 'package:github_repos_multithread/model/github_repo.dart';
+import 'package:github_repos_multithread/ui/constants/palette.dart';
+import 'package:github_repos_multithread/ui/constants/styles.dart';
 import 'package:github_repos_multithread/ui/favorites/bloc/favorites_cubit.dart';
 
 class FavoritesList extends StatelessWidget {

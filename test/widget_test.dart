@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
-import 'package:github_repos_multithread/constants/strings.dart';
 import 'package:github_repos_multithread/data/repos_repository.dart';
 import 'package:github_repos_multithread/main.dart';
+import 'package:github_repos_multithread/ui/constants/strings.dart';
 import 'package:mockito/annotations.dart';
 
 @GenerateNiceMocks([MockSpec<ReposRepository>()])

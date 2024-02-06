@@ -3,10 +3,10 @@ import 'package:get_it/get_it.dart';
 import 'package:github_repos_multithread/data/github_api.dart';
 import 'package:github_repos_multithread/data/repos_repository.dart';
 import 'package:github_repos_multithread/model/github_repo_owner.dart';
+import 'package:github_repos_multithread/ui/constants/theme.dart';
 import 'package:github_repos_multithread/ui/repos_list/repos_list_screen.dart';
 import 'package:hive_flutter/adapters.dart';
 
-import 'constants/theme.dart';
 import 'model/github_repo.dart';
 
 void main() async {
