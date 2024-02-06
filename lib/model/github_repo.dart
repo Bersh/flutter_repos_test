@@ -10,6 +10,7 @@ part 'github_repo.g.dart';
 class GitHubRepo with _$GitHubRepo {
   @HiveType(typeId: 0)
   const factory GitHubRepo(
+      // ignore:invalid_annotation_target
       {@JsonKey(name: 'id', required: true, disallowNullValue: true) @HiveField(0) required final int id,
       @HiveField(1) @Default('') final String name,
       @HiveField(2) @Default(false) final bool private,

@@ -4,7 +4,7 @@ import 'package:github_repos_multithread/ui/favorites/bloc/favorites_cubit.dart'
 import 'package:github_repos_multithread/ui/favorites/favorites_list_view.dart';
 
 class FavoritesListScreen extends StatelessWidget {
-  const FavoritesListScreen({Key? key}) : super(key: key);
+  const FavoritesListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

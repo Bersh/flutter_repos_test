@@ -8,6 +8,7 @@ part 'github_repo_owner.g.dart';
 class Owner with _$Owner {
   @HiveType(typeId: 1)
   const factory Owner(
+      // ignore:invalid_annotation_target
       {@JsonKey(name: 'id', required: true, disallowNullValue: true) @HiveField(0) required final int id,
       @HiveField(1) @Default('') final String login,
       @HiveField(2) final String? avatarUrl,
