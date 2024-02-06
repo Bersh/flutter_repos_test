@@ -11,7 +11,7 @@ const String baseUrl = "https://api.github.com";
 
 class GithubApi {
   Future<Either<String, ReposListResponse>> getReposList({String searchQuery = "", int page = 1}) async {
-    String url = '$baseUrl/search/repositories?per_page=$pageSize&page=$page&q=$searchQuery';
+    final String url = '$baseUrl/search/repositories?per_page=$pageSize&page=$page&q=$searchQuery';
 
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
